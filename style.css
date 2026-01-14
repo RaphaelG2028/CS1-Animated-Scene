@@ -1,1 +1,61 @@
+html, body {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 
+body {
+ background-image: url("https://wallpaper.dog/large/20552168.jpg");
+ background-size: cover;
+ 
+}
+
+#scene-description {
+ width: 600px;
+ margin: 20px auto;
+ text-align: center;
+ font-family: "Trebuchet MS";
+ font-size: 0.8em;
+ color: white;
+}
+
+#scene-container {
+ width: 600px;
+ height: 400px;
+ margin: auto;
+ border: 5px solid black;
+ background-color: white;
+ overflow: hidden; /* contain objects "on-screen" */
+ background-image: url(https://contentful.harrypotter.com/usf1vwtuqyxm/5Oie9dB3YOhwy8m5UeQV8s/26688b1533c09c589ba5a33cebc3692b/quidditch-pitch_1_1800x1248.png);
+ background-size: cover;
+}
+
+#Harry-Potter{
+    height: 100px;
+    animation: flying 2s infinite linear;
+}
+#snitch{
+    height: 20px;
+}
+
+
+ @keyframes flying {
+  0% {
+      transform: translate(-200px);
+  }
+  25% {
+      transform: translate(0px);
+  }
+  50% {
+      transform: translate(50px);
+  }
+  75% {
+      transform: translate(100px);
+  }
+
+  100% {
+      transform: translate(2000px);
+  }
+ }
