@@ -31,15 +31,24 @@ body {
  background-image: url(https://contentful.harrypotter.com/usf1vwtuqyxm/5Oie9dB3YOhwy8m5UeQV8s/26688b1533c09c589ba5a33cebc3692b/quidditch-pitch_1_1800x1248.png);
  background-size: cover;
 }
+#snitch{
+    height: 20px;
+     animation: flying 4.9s infinite linear;
+}
 
 #Harry-Potter{
     height: 100px;
     animation: flying 5s infinite linear;
 }
-#snitch{
-    height: 20px;
-}
 
+#ron{
+    height: 60px;
+    position: relative; 
+    top: 150px;
+    left: 100px;
+    animation: flyingron 1.7s infinite linear;
+    animation-direction: alternate;
+}
 @keyframes flying {
   0% {
     transform: translate(-200px) rotate(0deg);
@@ -59,5 +68,22 @@ body {
   100% {
     transform: translate(-100px) scale(-1) ;
   }
+}
 
+@keyframes flyingron {
+  0% {
+    transform: translatey(100px) ;
+  }
+  50% {
+    transform: translate(50px, 0px);
+  }
+  75% {
+    transform: translate(-100px, -50px)scaleX(-1);
+  }
+  85% {
+    transform: translate(-200px)scaleX(-1);
+  }
+  100%{
+    transform: translate(-370px)scaleX(-1) ;
+  }
 }
